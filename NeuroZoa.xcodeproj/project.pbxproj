@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		280E852E136F2E1600928B5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280E852D136F2E1600928B5E /* Cocoa.framework */; };
+		280E8538136F2E1600928B5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 280E8536136F2E1600928B5E /* InfoPlist.strings */; };
+		280E853B136F2E1600928B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E853A136F2E1600928B5E /* main.m */; };
+		280E853E136F2E1700928B5E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 280E853C136F2E1700928B5E /* Credits.rtf */; };
+		280E8541136F2E1700928B5E /* NeuroZoaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */; };
+		280E8544136F2E1700928B5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E8542136F2E1700928B5E /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		280E8529136F2E1600928B5E /* NeuroZoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroZoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		280E852D136F2E1600928B5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		280E8530136F2E1600928B5E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		280E8531136F2E1600928B5E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		280E8532136F2E1600928B5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		280E8535136F2E1600928B5E /* NeuroZoa-Info.plist */ = {isa = PBXFileReference; path = "NeuroZoa-Info.plist"; sourceTree = "<group>"; };
+		280E8537136F2E1600928B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		280E8539136F2E1600928B5E /* NeuroZoa-Prefix.pch */ = {isa = PBXFileReference; path = "NeuroZoa-Prefix.pch"; sourceTree = "<group>"; };
+		280E853A136F2E1600928B5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		280E853D136F2E1700928B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		280E853F136F2E1700928B5E /* NeuroZoaAppDelegate.h */ = {isa = PBXFileReference; path = NeuroZoaAppDelegate.h; sourceTree = "<group>"; };
+		280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeuroZoaAppDelegate.m; sourceTree = "<group>"; };
+		280E8543136F2E1700928B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		280E8526136F2E1600928B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280E852E136F2E1600928B5E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		280E851E136F2E1600928B5E = {
+			isa = PBXGroup;
+			children = (
+				280E8533136F2E1600928B5E /* NeuroZoa */,
+				280E852C136F2E1600928B5E /* Frameworks */,
+				280E852A136F2E1600928B5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		280E852A136F2E1600928B5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				280E8529136F2E1600928B5E /* NeuroZoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		280E852C136F2E1600928B5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				280E852D136F2E1600928B5E /* Cocoa.framework */,
+				280E852F136F2E1600928B5E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		280E852F136F2E1600928B5E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				280E8530136F2E1600928B5E /* AppKit.framework */,
+				280E8531136F2E1600928B5E /* CoreData.framework */,
+				280E8532136F2E1600928B5E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		280E8533136F2E1600928B5E /* NeuroZoa */ = {
+			isa = PBXGroup;
+			children = (
+				280E853F136F2E1700928B5E /* NeuroZoaAppDelegate.h */,
+				280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */,
+				280E8542136F2E1700928B5E /* MainMenu.xib */,
+				280E8534136F2E1600928B5E /* Supporting Files */,
+			);
+			path = NeuroZoa;
+			sourceTree = "<group>";
+		};
+		280E8534136F2E1600928B5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				280E8535136F2E1600928B5E /* NeuroZoa-Info.plist */,
+				280E8536136F2E1600928B5E /* InfoPlist.strings */,
+				280E8539136F2E1600928B5E /* NeuroZoa-Prefix.pch */,
+				280E853A136F2E1600928B5E /* main.m */,
+				280E853C136F2E1700928B5E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		280E8528136F2E1600928B5E /* NeuroZoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280E8547136F2E1700928B5E /* Build configuration list for PBXNativeTarget "NeuroZoa" */;
+			buildPhases = (
+				280E8525136F2E1600928B5E /* Sources */,
+				280E8526136F2E1600928B5E /* Frameworks */,
+				280E8527136F2E1600928B5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuroZoa;
+			productName = NeuroZoa;
+			productReference = 280E8529136F2E1600928B5E /* NeuroZoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		280E8520136F2E1600928B5E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 280E8523136F2E1600928B5E /* Build configuration list for PBXProject "NeuroZoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 280E851E136F2E1600928B5E;
+			productRefGroup = 280E852A136F2E1600928B5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				280E8528136F2E1600928B5E /* NeuroZoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		280E8527136F2E1600928B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280E8538136F2E1600928B5E /* InfoPlist.strings in Resources */,
+				280E853E136F2E1700928B5E /* Credits.rtf in Resources */,
+				280E8544136F2E1700928B5E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		280E8525136F2E1600928B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280E853B136F2E1600928B5E /* main.m in Sources */,
+				280E8541136F2E1700928B5E /* NeuroZoaAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		280E8536136F2E1600928B5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280E8537136F2E1600928B5E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		280E853C136F2E1700928B5E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280E853D136F2E1700928B5E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		280E8542136F2E1700928B5E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280E8543136F2E1700928B5E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		280E8545136F2E1700928B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		280E8546136F2E1700928B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		280E8548136F2E1700928B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NeuroZoa/NeuroZoa-Prefix.pch";
+				INFOPLIST_FILE = "NeuroZoa/NeuroZoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		280E8549136F2E1700928B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NeuroZoa/NeuroZoa-Prefix.pch";
+				INFOPLIST_FILE = "NeuroZoa/NeuroZoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		280E8523136F2E1600928B5E /* Build configuration list for PBXProject "NeuroZoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280E8545136F2E1700928B5E /* Debug */,
+				280E8546136F2E1700928B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		280E8547136F2E1700928B5E /* Build configuration list for PBXNativeTarget "NeuroZoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280E8548136F2E1700928B5E /* Debug */,
+				280E8549136F2E1700928B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 280E8520136F2E1600928B5E /* Project object */;
+}

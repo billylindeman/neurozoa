@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'NeuroZoa' target in the 'NeuroZoa' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
