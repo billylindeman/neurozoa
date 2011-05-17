@@ -4,6 +4,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 280F34291382C550003CACF0 /* NeuroZoa */;
 		activeTarget = 280E8528136F2E1600928B5E /* NeuroZoa */;
+		addToTargets = (
+			280E8528136F2E1600928B5E /* NeuroZoa */,
+		);
 		codeSenseManager = 280F34561382C559003CACF0 /* Code sense */;
 		executables = (
 			280F34291382C550003CACF0 /* NeuroZoa */,
@@ -43,6 +46,13 @@
 		executables = (
 			280F34291382C550003CACF0 /* NeuroZoa */,
 		);
+	};
+	280E854E136F2E6600928B5E /* ZoaNeuralNet.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1281, 1274}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{577, 2201}";
+		};
 	};
 	280E854F136F2E6600928B5E /* ZoaNeuralNet.h */ = {
 		uiCtxt = {

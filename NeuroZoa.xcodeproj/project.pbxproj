@@ -14,6 +14,8 @@
 		280E8541136F2E1700928B5E /* NeuroZoaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */; };
 		280E8544136F2E1700928B5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E8542136F2E1700928B5E /* MainMenu.xib */; };
 		280E8550136F2E6600928B5E /* ZoaNeuralNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 280E854E136F2E6600928B5E /* ZoaNeuralNet.cpp */; };
+		280F34741382D13F003CACF0 /* NeuralNet.h in Sources */ = {isa = PBXBuildFile; fileRef = 280F34721382D13F003CACF0 /* NeuralNet.h */; };
+		280F34751382D13F003CACF0 /* NeuralNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 280F34731382D13F003CACF0 /* NeuralNet.m */; };
 		283E7EB113719B3900E9447C /* ZoaNeuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 283E7EAF13719B3900E9447C /* ZoaNeuron.cpp */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		280E8543136F2E1700928B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		280E854E136F2E6600928B5E /* ZoaNeuralNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZoaNeuralNet.cpp; sourceTree = "<group>"; };
 		280E854F136F2E6600928B5E /* ZoaNeuralNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoaNeuralNet.h; sourceTree = "<group>"; };
+		280F34721382D13F003CACF0 /* NeuralNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = NeuralNet.h; sourceTree = "<group>"; };
+		280F34731382D13F003CACF0 /* NeuralNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuralNet.m; sourceTree = "<group>"; };
 		283E7EAF13719B3900E9447C /* ZoaNeuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZoaNeuron.cpp; sourceTree = "<group>"; };
 		283E7EB013719B3900E9447C /* ZoaNeuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoaNeuron.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +120,8 @@
 				280E854F136F2E6600928B5E /* ZoaNeuralNet.h */,
 				283E7EAF13719B3900E9447C /* ZoaNeuron.cpp */,
 				283E7EB013719B3900E9447C /* ZoaNeuron.h */,
+				280F34721382D13F003CACF0 /* NeuralNet.h */,
+				280F34731382D13F003CACF0 /* NeuralNet.m */,
 			);
 			name = ZoaNet;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 				280E8541136F2E1700928B5E /* NeuroZoaAppDelegate.m in Sources */,
 				280E8550136F2E6600928B5E /* ZoaNeuralNet.cpp in Sources */,
 				283E7EB113719B3900E9447C /* ZoaNeuron.cpp in Sources */,
+				280F34741382D13F003CACF0 /* NeuralNet.h in Sources */,
+				280F34751382D13F003CACF0 /* NeuralNet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
