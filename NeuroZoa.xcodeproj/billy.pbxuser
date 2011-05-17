@@ -47,18 +47,11 @@
 			280F34291382C550003CACF0 /* NeuroZoa */,
 		);
 	};
-	280E854E136F2E6600928B5E /* ZoaNeuralNet.cpp */ = {
+	280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1281, 1274}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1281, 899}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{577, 2201}";
-		};
-	};
-	280E854F136F2E6600928B5E /* ZoaNeuralNet.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1281, 922}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 713}";
+			sepNavVisRange = "{0, 375}";
 		};
 	};
 	280F34291382C550003CACF0 /* NeuroZoa */ = {
@@ -85,6 +78,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = NeuroZoa;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -103,18 +98,18 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	283E7EAF13719B3900E9447C /* ZoaNeuron.cpp */ = {
+	280F34721382D13F003CACF0 /* NeuralNet.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1281, 922}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 164}";
+			sepNavIntBoundsRect = "{{0, 0}, {1281, 899}}";
+			sepNavSelRange = "{388, 0}";
+			sepNavVisRange = "{0, 622}";
 		};
 	};
-	283E7EB013719B3900E9447C /* ZoaNeuron.h */ = {
+	280F34731382D13F003CACF0 /* NeuralNet.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1281, 922}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 307}";
+			sepNavIntBoundsRect = "{{0, 0}, {1281, 3211}}";
+			sepNavSelRange = "{6911, 0}";
+			sepNavVisRange = "{0, 2020}";
 		};
 	};
 }
