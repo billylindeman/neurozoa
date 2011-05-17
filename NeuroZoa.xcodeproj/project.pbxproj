@@ -13,6 +13,8 @@
 		280E853E136F2E1700928B5E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 280E853C136F2E1700928B5E /* Credits.rtf */; };
 		280E8541136F2E1700928B5E /* NeuroZoaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */; };
 		280E8544136F2E1700928B5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E8542136F2E1700928B5E /* MainMenu.xib */; };
+		280E8550136F2E6600928B5E /* ZoaNeuralNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 280E854E136F2E6600928B5E /* ZoaNeuralNet.cpp */; };
+		283E7EB113719B3900E9447C /* ZoaNeuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 283E7EAF13719B3900E9447C /* ZoaNeuron.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,18 @@
 		280E8530136F2E1600928B5E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		280E8531136F2E1600928B5E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		280E8532136F2E1600928B5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		280E8535136F2E1600928B5E /* NeuroZoa-Info.plist */ = {isa = PBXFileReference; path = "NeuroZoa-Info.plist"; sourceTree = "<group>"; };
+		280E8535136F2E1600928B5E /* NeuroZoa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NeuroZoa-Info.plist"; sourceTree = "<group>"; };
 		280E8537136F2E1600928B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		280E8539136F2E1600928B5E /* NeuroZoa-Prefix.pch */ = {isa = PBXFileReference; path = "NeuroZoa-Prefix.pch"; sourceTree = "<group>"; };
+		280E8539136F2E1600928B5E /* NeuroZoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NeuroZoa-Prefix.pch"; sourceTree = "<group>"; };
 		280E853A136F2E1600928B5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		280E853D136F2E1700928B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		280E853F136F2E1700928B5E /* NeuroZoaAppDelegate.h */ = {isa = PBXFileReference; path = NeuroZoaAppDelegate.h; sourceTree = "<group>"; };
+		280E853F136F2E1700928B5E /* NeuroZoaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NeuroZoaAppDelegate.h; sourceTree = "<group>"; };
 		280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NeuroZoaAppDelegate.m; sourceTree = "<group>"; };
 		280E8543136F2E1700928B5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		280E854E136F2E6600928B5E /* ZoaNeuralNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZoaNeuralNet.cpp; sourceTree = "<group>"; };
+		280E854F136F2E6600928B5E /* ZoaNeuralNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoaNeuralNet.h; sourceTree = "<group>"; };
+		283E7EAF13719B3900E9447C /* ZoaNeuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZoaNeuron.cpp; sourceTree = "<group>"; };
+		283E7EB013719B3900E9447C /* ZoaNeuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoaNeuron.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		280E8533136F2E1600928B5E /* NeuroZoa */ = {
 			isa = PBXGroup;
 			children = (
+				280E854A136F2E2E00928B5E /* ZoaNet */,
 				280E853F136F2E1700928B5E /* NeuroZoaAppDelegate.h */,
 				280E8540136F2E1700928B5E /* NeuroZoaAppDelegate.m */,
 				280E8542136F2E1700928B5E /* MainMenu.xib */,
@@ -100,6 +107,17 @@
 				280E853C136F2E1700928B5E /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		280E854A136F2E2E00928B5E /* ZoaNet */ = {
+			isa = PBXGroup;
+			children = (
+				280E854E136F2E6600928B5E /* ZoaNeuralNet.cpp */,
+				280E854F136F2E6600928B5E /* ZoaNeuralNet.h */,
+				283E7EAF13719B3900E9447C /* ZoaNeuron.cpp */,
+				283E7EB013719B3900E9447C /* ZoaNeuron.h */,
+			);
+			name = ZoaNet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +182,8 @@
 			files = (
 				280E853B136F2E1600928B5E /* main.m in Sources */,
 				280E8541136F2E1700928B5E /* NeuroZoaAppDelegate.m in Sources */,
+				280E8550136F2E6600928B5E /* ZoaNeuralNet.cpp in Sources */,
+				283E7EB113719B3900E9447C /* ZoaNeuron.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +298,7 @@
 				280E8549136F2E1700928B5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
