@@ -21,7 +21,7 @@
 	double **m_ihWeights;
 	double **m_hoWeights;
 }
-
+-(id)initFromDict:(NSDictionary*)dict;
 -(id)initFromFile:(NSString*)filePath;
 -(void)writeToFile:(NSString*)filePath;
 -(id)initWithInputs:(int)nInput hidden:(int)nHidden outputs:(int)nOutput;

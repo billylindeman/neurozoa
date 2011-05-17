@@ -23,12 +23,9 @@ int clampOutput( double x )
 	else return -1;
 }
 
--(id)initFromFile:(NSString*)filePath {
+-(id)initFromDict:(NSDictionary*)dict {
 	if((self = [super init])) {
-
-		//initialize from file
-		NSDictionary *dict = [[NSDictionary alloc] initFromFile:filePath];
-
+		
 		//grab arrays
 		NSArray *inputNeurons = [dict objectForKey:@"m_inputNeurons"];
 		NSArray *hiddenNeurons  = [dict objectForKey:@"m_hiddenNeurons"];
@@ -39,7 +36,7 @@ int clampOutput( double x )
 		m_nInput = [inputNeurons count];
 		m_nHidden = [hiddenNeurons count];
 		m_nOutput = [outputNeurons count];
-			
+		
 		//allocate c-arrays
 		m_inputNeurons = malloc(sizeof(double)*m_nInput);
 		m_hiddenNeurons = malloc(sizeof(double)*m_nHidden);
@@ -80,17 +77,23 @@ int clampOutput( double x )
 			}	
 		}
 		
-		//load the bias weights
-		m_ihBias = [[dict objectForKey:@"m_ihBias"] doubleValue];
-		m_hoBias = [[dict objectForKey:@"m_hoBias"] doubleValue];
-		
-		
-		//release dict
-		[dict release], dict=nil;
-	
 	}
 	
 	return self;
+}
+
+
+-(id)initFromFile:(NSString*)filePath {
+	//initialize from file
+	NSDictionary *dict = [[NSDictionary alloc] initFromFile:filePath];
+	if((self = [self initFromDict:dict])){
+		//release dict
+		[dict release], dict=nil;
+		return self;
+
+	}
+	
+	return nil;
 }
 
 -(void)writeToFile:(NSString*)filePath {
