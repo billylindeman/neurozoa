@@ -8,9 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class MutableNeuralNet;
+
 @interface NeuroZoaAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
+
+	MutableNeuralNet *nn;
 }
 
 @property (assign) IBOutlet NSWindow *window;

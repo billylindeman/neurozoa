@@ -10,9 +10,9 @@
 
 
 @interface NeuralNet : NSObject {
+	double m_nOutput;
 	double m_nInput;
 	double m_nHidden;
-	double m_nOutput;
 	
 	double *m_inputNeurons;
 	double *m_hiddenNeurons;
@@ -20,13 +20,12 @@
 	
 	double **m_ihWeights;
 	double **m_hoWeights;
+	
 }
+	
 -(id)initFromDict:(NSDictionary*)dict;
 -(id)initFromFile:(NSString*)filePath;
 -(void)writeToFile:(NSString*)filePath;
--(id)initWithInputs:(int)nInput hidden:(int)nHidden outputs:(int)nOutput;
--(void)randomizeWeights;
-
 
 -(void)feedForward:(NSArray*)inputPattern;
 	

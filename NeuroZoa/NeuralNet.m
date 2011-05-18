@@ -14,13 +14,6 @@
 double activationFunction(double x)
 {
 	return 1/(1+exp(-x));
-}	
-
-int clampOutput( double x )
-{
-	if ( x < 0.1 ) return 0;
-	else if ( x > 0.9 ) return 1;
-	else return -1;
 }
 
 -(id)initFromDict:(NSDictionary*)dict {
@@ -157,53 +150,6 @@ int clampOutput( double x )
 	[file writeToFile:filePath atomically:NO];
 }
 
-
--(id)initWithInputs:(int)nInput hidden:(int)nHidden outputs:(int)nOutput {
-	if((self=[super init])) {
-		m_nInput = nInput+1; m_nHidden = nHidden+1; m_nOutput = nOutput;
-		
-		//initialize neuron arrays
-		m_inputNeurons = malloc(sizeof(double)*(m_nInput));	
-		m_hiddenNeurons = malloc(sizeof(double)*(m_nHidden));
-		m_outputNeurons = malloc(sizeof(double)*m_nOutput);
-		
-		//initialize weight arrays
-		m_ihWeights = malloc(sizeof(double*)*m_nInput);
-		for(int i=0; i<m_nInput; i++) {
-			m_ihWeights[i] = malloc(sizeof(double)*(m_nHidden-1));
-		}
-		
-		//initialize weight arrays
-		m_hoWeights = malloc(sizeof(double*)*m_nHidden);
-		for(int i=0; i<m_nOutput; i++) {
-			m_hoWeights[i] = malloc(sizeof(double)*m_nOutput);
-		}
-		
-		[self randomizeWeights];
-	}	
-	
-	
-	return self;
-}
-
--(void)randomizeWeights {
-	double rangeHidden = 1/sqrt( (double) m_nInput);
-	for(int i = 0; i < m_nInput; i++){
-		for(int j = 0; j < m_nHidden; j++){
-			m_ihWeights[i][j] = (((double)(rand()%100)+1)/100*2*rangeHidden)-rangeHidden;			
-		}
-	}
-	
-	double rangeOutput = 1/sqrt( (double) m_nHidden);
-	for(int i = 0; i < m_nHidden; i++){
-		for(int j = 0; j < m_nOutput; j++){
-			m_hoWeights[i][j] = (((double)(rand()%100)+1)/100*2*rangeOutput)-rangeOutput;			
-		}
-	}
-	
-	
-}
-
 -(void)feedForward:(NSArray*)inputPattern {
 	
 	//the inputpattern should match the number of inputs
@@ -237,12 +183,31 @@ int clampOutput( double x )
 		
 		//set to result of sigmoid
 		m_outputNeurons[k] = activationFunction( m_outputNeurons[k] );
+	
 	}
 	
 }
-
+-(void)dumpOutput {
+	for(int k =0; k<m_nOutput; k++) {
+		NSLog(@"out[%i]: %f", k, m_outputNeurons[k]);	
+	}	
+}
 -(void)dealloc {
+	//free neurons
+	free(m_inputNeurons);
+	free(m_hiddenNeurons);
+	free(m_outputNeurons);
 	
+	
+	//free weight arrays
+	for(int i=0; i< m_nInput; i++) {
+		free(m_ihWeights[i]);
+	}
+	free(m_ihWeights);
+	for(int i=0; i< m_nHidden; i++) {
+		free(m_hoWeights[i]);
+	}
+	free(m_hoWeights);
 	
 }
 
