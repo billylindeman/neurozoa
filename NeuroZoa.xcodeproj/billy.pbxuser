@@ -418,8 +418,8 @@
 	280F34AF13830AC6003CACF0 /* NNTrainer.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1535, 1067}}";
-			sepNavSelRange = "{541, 0}";
-			sepNavVisRange = "{0, 1008}";
+			sepNavSelRange = "{948, 0}";
+			sepNavVisRange = "{0, 1005}";
 		};
 	};
 	280F34B4138313E3003CACF0 /* PBXTextBookmark */ = {
@@ -1233,7 +1233,7 @@
 		fRef = 280F34AF13830AC6003CACF0 /* NNTrainer.m */;
 		name = "NNTrainer.m: 97";
 		rLen = 0;
-		rLoc = 1002;
+		rLoc = 999;
 		rType = 0;
 		vrLen = 2241;
 		vrLoc = 253;
@@ -1243,7 +1243,7 @@
 		fRef = 280F34AF13830AC6003CACF0 /* NNTrainer.m */;
 		name = "NNTrainer.m: 97";
 		rLen = 0;
-		rLoc = 1002;
+		rLoc = 999;
 		rType = 0;
 		vrLen = 2241;
 		vrLoc = 253;
@@ -1393,7 +1393,7 @@
 		fRef = 280F34AF13830AC6003CACF0 /* NNTrainer.m */;
 		name = "NNTrainer.m: 97";
 		rLen = 0;
-		rLoc = 1002;
+		rLoc = 999;
 		rType = 0;
 		vrLen = 2241;
 		vrLoc = 253;
@@ -1480,7 +1480,7 @@
 		fRef = 280F34AF13830AC6003CACF0 /* NNTrainer.m */;
 		name = "NNTrainer.m: 97";
 		rLen = 0;
-		rLoc = 1002;
+		rLoc = 999;
 		rType = 0;
 		vrLen = 2212;
 		vrLoc = 282;
@@ -1543,8 +1543,8 @@
 	};
 	2884D630138433CD009559A9 /* MutableNeuralNet.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1535, 2730}}";
-			sepNavSelRange = "{197, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1535, 2691}}";
+			sepNavSelRange = "{4507, 0}";
 			sepNavVisRange = "{0, 2069}";
 		};
 	};
@@ -1660,7 +1660,7 @@
 		fRef = 280F34AF13830AC6003CACF0 /* NNTrainer.m */;
 		name = "NNTrainer.m: 26";
 		rLen = 0;
-		rLoc = 956;
+		rLoc = 953;
 		rType = 0;
 		vrLen = 417;
 		vrLoc = 0;
