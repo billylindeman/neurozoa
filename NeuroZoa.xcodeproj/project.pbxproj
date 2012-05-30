@@ -162,6 +162,9 @@
 /* Begin PBXProject section */
 		280E8520136F2E1600928B5E /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 280E8523136F2E1600928B5E /* Build configuration list for PBXProject "NeuroZoa" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
