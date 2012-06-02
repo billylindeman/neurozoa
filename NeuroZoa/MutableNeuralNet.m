@@ -7,8 +7,9 @@
 //
 
 #import "MutableNeuralNet.h"
+#import "time.h"
 
-#define kLearningRate .01
+#define kLearningRate .1
 
 @implementation MutableNeuralNet
 
@@ -67,6 +68,8 @@ int clampOutput( double x )
 }
 
 -(void)randomizeWeights {
+    srand ( time(NULL) );
+
 	double rangeHidden = 1/sqrt( (double) m_nInput);
 	for(int i = 0; i < m_nInput; i++){
 		for(int j = 0; j < (m_nHidden-1); j++){
@@ -201,6 +204,7 @@ int clampOutput( double x )
 	}
 	free(m_hoDelta);
 	
+    [super dealloc];
 }
 
 @end

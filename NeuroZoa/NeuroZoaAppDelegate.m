@@ -29,7 +29,7 @@
 	
 	NNTrainer *trainer = [[NNTrainer alloc] initWithNetwork:nn];
 	
-	[trainer setMaxEpochs:500];
+	[trainer setMaxEpochs:8000];
 	[trainer setDesiredAccuracy:99.999];
 	
 	[trainer trainNetwork:trainingSet];
