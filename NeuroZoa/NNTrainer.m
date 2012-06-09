@@ -50,6 +50,7 @@
 -(void)dealloc {
 	[m_nerualNet release];
 	
+    [super dealloc];
 }
 
 @end

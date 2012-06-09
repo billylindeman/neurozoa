@@ -49,8 +49,7 @@ int clampOutput( double x )
 			m_ihDelta[i] = malloc(sizeof(double)*(m_nHidden-1));
 		}
 		
-		
-		//initialize weight arrays (and deltas)
+        //initialize weight arrays (and deltas)
 		m_hoWeights = malloc(sizeof(double*)*m_nHidden);
 		m_hoDelta = malloc(sizeof(double*)*m_nHidden);
 		for(int i=0; i<m_nHidden; i++) {
